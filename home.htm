@@ -7,12 +7,53 @@
 </head>
 <body>
     <nav>
+        <a href="/index.htm" style="color: #79775f"><strong>Login</strong></a>
         <a href="/home.htm" style="color: #79775f"><strong>Home</strong></a>
+        <a href="/register.htm" style="color: #79775f"><strong>Register</strong></a>
         <a href="about.htm" style="color: #79775f"><strong>About</strong></a>
     </nav>
 
-    <h1>Task Tracker</h1>
-   
+    <h1>Task Manager</h1>
+
+    <div style="margin-left:100px; margin-right:100px; background-color:cadetblue">
+
+        <!--Form to Create a New Task-->
+        <form method="post" action="/registration/new" id="registration-form" style="margin-left:20px; font-size:25px">
+
+            <label for="task">Task:</label><br />
+            <input type="text" id="task" name="task" required="required" autofocus="autofocus"><br /> <br />
+
+            <!--Due date with calendar-->
+            <label for="dueDate">Due Date:</label><br />
+            <input type="datetime-local" id="dueDate" name="dueDate" required="required"><br /><br />
+
+            <!--Radio buttons for priority levels-->
+            Select a priority level:<br />  
+            <input type="radio" id="urgent" name="priority">
+            <label for="urgent">Urgent</label><br />
+            <input type="radio" id="important" name="priority">
+            <label for="important">Important</label><br />
+            <input type="radio" id="routine" name="priority">
+            <label for="routine">Routine</label><br /><br />
+
+            <!--Category for Task-->
+            <label for="category">Category:</label>
+            <select name="Category:">
+                <option value="personal">Personal</option>
+                <option value="school">School</option>
+                <option value="work">Work</option>
+            </select><br /><br />
+
+            <!--Notes text area-->
+            <label for="notes">Notes:</label><br />
+            <textarea rows="5" cols="60" id="notes" name="notes"></textarea><br /> 
+
+
+            <input class="button" type="submit" value="Submit" />
+
+
+        </form>
+    </div>
 
 </body>
 </html>

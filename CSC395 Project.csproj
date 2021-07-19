@@ -68,9 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.htm" />
+    <Content Include="home.htm" />
     <Content Include="images\desktop.jpg" />
     <Content Include="images\IMG_6852.jpg" />
-    <Content Include="home.htm" />
+    <Content Include="index.htm" />
+    <Content Include="scripts\register.js" />
+    <Content Include="register.htm" />
+    <Content Include="registered.htm" />
     <Content Include="styles\StyleSheet1.css" />
     <Content Include="Web.config" />
   </ItemGroup>
